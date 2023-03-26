@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wine Quality Prediction</title>
+</head>
+<body>
+
+    <h1 style="font-size:40px; text-align:center;color:black;"><u> Wine Quality Prediction</u><h1>
+
+    <form action="/get_data" method="post">
+        <p style= "font-size:25px; text-align:center;color:black;" >
+        <label> fixed_acidity :</label> <input type="text" name = 'html_fixed_acidity'> <br>
+
+        <label> volatile_acidity :</label> <input type="text" name = 'html_volatile_acidity'> <br>
+
+        <label> citric_acid :</label> <input type="text" name = 'html_citric_acid'> <br>
+
+        <label>residual_sugar :</label> <input type="text" name = 'html_residual_sugar'> <br>
+
+        <label>chlorides :</label> <input type="text" name = 'html_chlorides'> <br>
+
+        <label>free_sulfur_dioxide :</label> <input type="number" name = 'html_free_sulfur_dioxide'> <br>
+
+        <label>total_sulfur_dioxide :</label> <input type="number" name = 'html_total_sulfur_dioxide'> <br>
+
+        <label>density :</label> <input type="text" name = 'html_density'> <br>
+
+        <label>pH :</label> <input type="floatformat" name = 'html_pH'> <br>
+
+        <label>sulphates :</label> <input type="floatformat" name = 'html_sulphates'> <br>
+
+        <label>alcohol :</label> <input type="floatformat" name = 'html_alcohol'> <br>
+        
+
+    </select> <br>
+    <input style="font-size:20px;color:blue;" font type="submit" value=" Check Quality"><br>
+        </p>
+<form><br>
+    <p style= "font-size:35px; text-align:center;color:black;">
+    <label> Result : </label> {{prediction}}
+    <p>
+</body>
+
+</html>
+

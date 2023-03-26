@@ -12,13 +12,13 @@ class wineprediction():
         
         """ This is fuction of wine_prediction model """
         
-        with open('artifacts/project_data.json','r') as file:
+        with open('artifacts\project_data.json','r') as file:
             self.project_data = json.load(file)
 
-        with open('artifacts/scale.pkl','rb') as file:
+        with open('artifacts\scale.pkl','rb') as file:
             self.scaler = pickle.load(file)
 
-        with open('artifacts/model.pkl','rb') as file:  
+        with open('artifacts\model.pkl','rb') as file:  
             self.model = pickle.load(file)
             
             
